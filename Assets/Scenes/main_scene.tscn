@@ -5,9 +5,11 @@
 
 [node name="MainScene" type="Node2D"]
 
-[node name="Player" type="Sprite2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Player" type="Node" parent="."]
+
+[node name="Player" type="Sprite2D" parent="Player"]
 position = Vector2(-2, 1)
 texture = ExtResource("1_1moq4")
 script = ExtResource("2_xcvj3")
-
-[node name="Camera2D" type="Camera2D" parent="."]

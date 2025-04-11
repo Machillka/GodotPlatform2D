@@ -16,9 +16,13 @@ public partial class PlayerMovement : Sprite2D
         {
             _direction = -1;
         }
-        if (Input.IsActionPressed("ui_right"))
+        else if (Input.IsActionPressed("ui_right"))
         {
             _direction = 1;
+        }
+        else
+        {
+            _direction = 0;
         }
 
         // 左右移动
