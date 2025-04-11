@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjp777yp5d2oc"]
+
+[ext_resource type="Texture2D" uid="uid://d0orjqlvsnquv" path="res://Assets/Sprite-0001.png" id="1_1moq4"]
+[ext_resource type="Script" uid="uid://b5xrn177v4xw" path="res://Scripts/PlayerMovement.cs" id="2_xcvj3"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(-2, 1)
+texture = ExtResource("1_1moq4")
+script = ExtResource("2_xcvj3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
